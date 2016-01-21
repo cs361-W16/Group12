@@ -10,7 +10,7 @@ public class Deck{
                     "AC","2C","3C","4C","5C","6C","7C","8C","9C","10C","JC","QC","KC",
                     "AS","2S","3S","4S","5S","6S","7S","8S","9S","10S","JS","QS","KS",};
 
-    // shuffle algorithm from http://introcs.cs.princeton.edu/java/21function/Shuffle.java.html
+    // shuffle method from http://introcs.cs.princeton.edu/java/21function/Shuffle.java.html
     // swaps array elements i and j
     public static void exch(String[] deck, int i, int j) {
         String swap = deck[i];
