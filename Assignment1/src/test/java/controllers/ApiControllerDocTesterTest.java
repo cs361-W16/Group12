@@ -24,13 +24,14 @@ import org.doctester.testbrowser.Request;
 import org.doctester.testbrowser.Response;
 import org.hamcrest.CoreMatchers;
 import static org.hamcrest.CoreMatchers.containsString;
+import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertThat;
 
 public class ApiControllerDocTesterTest extends NinjaDocTester {
-    
+
     String URL_INDEX = "/";
     String URL_ACES_UP = "/AcesUp";
-    
+
     @Test
     public void testGetIndex() {
 
@@ -51,5 +52,4 @@ public class ApiControllerDocTesterTest extends NinjaDocTester {
         assertThat(response.payload, containsString("Aces Up"));
         assertThat(response.payload, containsString("columnOfCards"));
     }
-
 }
