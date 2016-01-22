@@ -6,7 +6,7 @@ package models;
 public class Column {
     public int spaceAvail; //how many spaces the column has
     public int spaceTaken; //how many cards are in the column
-    String[] order; //the order of the Cards: first element is top of the column, last element is the bottom
+    public String[] order; //the order of the Cards: first element is top of the column, last element is the bottom
 
     //default constructor makes an empty column
     public Column(){
