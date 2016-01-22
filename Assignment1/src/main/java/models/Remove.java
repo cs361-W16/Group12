@@ -3,7 +3,7 @@ package models;
 /**
  * Created by Derek Wong on 1/21/2016.
  */
- 
+
  public class Remove {
 	 public static void remove(String[] column1,String[] column2,String[] column3,String[] column4){
 		 
@@ -91,7 +91,7 @@ package models;
 			 else
 				 column4[index4] = null;
 		 } 
-		 
+
 	 }
 	 
 	 
