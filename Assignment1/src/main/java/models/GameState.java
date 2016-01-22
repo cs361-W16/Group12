@@ -6,7 +6,35 @@ import java.util.ArrayList;
 
 /**
  * Created by isaac on 1/21/2016.
+ * Modified by michael 1/22/2016.
  */
+public class GameState{
+    public Deck deck;
+    public Column column1;
+    public Column column2;
+    public Column column3;
+    public Column column4;
+
+    //default constructor starts an empty game
+    public GameState(){
+        deck = new Deck();
+        column1 = new Column();
+        column2 = new Column();
+        column3 = new Column();
+        column4 = new Column();
+    }
+    //non default constructor sets up a deck at a stage in the game
+    public GameState(String[] sDeck, String[] sColumn1, String[] sColumn2, String[] sColumn3, String[] sColumn4){
+        deck = new Deck(sDeck);
+        column1 = new Column(sColumn1);
+        column2 = new Column(sColumn2);
+        column3 = new Column(sColumn3);
+        column4 = new Column(sColumn4);
+    }
+
+}
+
+/*
 public class GameState {
     public static void main(String[] args) {
 
@@ -29,4 +57,4 @@ public class GameState {
             aDeck.drawFromDeck(col4);
         //}
     }
-}
+}*/

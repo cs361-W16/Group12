@@ -1,4 +1,4 @@
-package models;
+package controllers;
 
 /**
  * Created by Derek Wong on 1/21/2016.
@@ -7,7 +7,7 @@ package models;
  public class Remove {
 	 public static void remove(String[] column1,String[] column2,String[] column3,String[] column4){
 		 
-		 int valueOne, valueTwo, valueThree, valueFour;
+		 String valueOne, valueTwo, valueThree, valueFour;
 		 int index1, index2, index3, index4;
 		 char s1, s2, s3, s4, v1, v2, v3, v4;
 		 
@@ -56,7 +56,7 @@ package models;
 		 //check if there is matching suit
 		 //if there is matching suit, then remove the lowest value card
 		 if (s1 == s2){
-			 if (v1 < v2 || )
+			 if (v1 < v2)
 				 column1[index1] = null;
 			 else
 				 column2[index2] = null;
