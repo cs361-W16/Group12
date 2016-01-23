@@ -52,7 +52,7 @@ public class Move {
             {
                 game.column1[i] = game.column2[i];
             }
-            if (game.column1.order[game.controlumn1.spaceTaken-1 == "4H"])
+            if (game.column1.order[game.column1.spaceTaken-1 == "4H"])
             {
                 System.out.println("Test successful");
 
