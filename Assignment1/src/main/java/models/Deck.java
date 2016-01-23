@@ -6,7 +6,7 @@ package models;
  */
 public class Deck {
     //deck variables
-    String[] deckContains;
+    public String[] deckContains;
     public int numCards;
 
     //default constructor makes a full deck of 52 cards
@@ -25,7 +25,7 @@ public class Deck {
     }
     //constructor to set certain deck elements must specify what cards are in deck
     public Deck(String[] customDeck){
-        int numCards = customDeck.length;
+        numCards = customDeck.length;
         deckContains = new String[numCards];
         for(int i = 0; i<numCards; i++){
             deckContains[i] = customDeck[i];
