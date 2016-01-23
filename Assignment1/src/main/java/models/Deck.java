@@ -19,6 +19,14 @@ public class Deck {
                 "AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "10C", "JC", "QC", "KC",
                 "AS", "2S", "3S", "4S", "5S", "6S", "7S", "8S", "9S", "10S", "JS", "QS", "KS",};
 
+        //shuffles deck
+        for (int i = 0; i < numCards; i++) {
+            int j = i + (int) (Math.random() * (numCards - i));
+            String swap = fullDeck[i];
+            fullDeck[i] = fullDeck[j];
+            fullDeck[j] = swap;
+        }
+
         for(int i = 0; i < numCards; i++){
             deckContains[i] = fullDeck[i]; // can input the shuffle before this though
         }
@@ -31,7 +39,6 @@ public class Deck {
             deckContains[i] = customDeck[i];
         }
     }
-
 }
 
 
