@@ -30,19 +30,20 @@ import static org.junit.Assert.assertThat;
 /**
  * Created by Derek Wong on 1/22/2016.
  */
- 
+
+
  public class RemoveTest extends NinjaDocTester {
 	 
 	 @Test
 	 public void top_card_test(){
 		 
-		 string[] column1 = {null,null,null,null,null,"6H", "7H", "8H", "9H", "10H", "JH", "QH", "KH"};
-		 String valueOne;
+		 String[] column1 = {null,null,null,null,null,"6H", "7H", "8H", "9H", "10H", "JH", "QH", "KH"};
+		 //String valueOne;
 		 int index1;
 		 
 		 for (int i=0; i > 13; i++){			 
 			 if (column1[i] != null){
-				 valueOne = column1[i];
+				 String valueOne = column1[i];
 				 index1 = i;
 				 break;
 			 }	 
@@ -60,8 +61,8 @@ import static org.junit.Assert.assertThat;
 		 s1 = valueOne.charAt(1);
 		 v1 = valueOne.charAt(0);
 		 
-		 assertThat(s1, containsString('H'));
-		 assertThat(v1, containsString('2'));
+		 assertThat(s1, containsString("H"));
+		 assertThat(v1, containsString("2"));
 	 }
 	 
 	 @Test
